@@ -17,3 +17,11 @@ func TestTodosNumerosIguais(t *testing.T) {
 		t.Errorf("resultado '%t', esperando '%t'", resultado, esperado)
 	}
 }
+
+func TestRemovedorDeCaracterEspecial(t *testing.T) {
+	resultado := removedorDeCaracterEspecial("464-946-988.88")
+	esperado := "46494698888"
+	if resultado != esperado {
+		t.Errorf("resultado '%s', esperando '%s'", resultado, esperado)
+	}
+}
